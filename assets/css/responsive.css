@@ -133,6 +133,21 @@
     margin-bottom: 3rem;
   }
 
+  .footer-social {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+
+  .footer-social__links-list {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-social__link--item {
+    width: 25%;
+  }
+
   .footer-message {
     margin-top: 2rem;
     padding-left: 0;
@@ -146,10 +161,12 @@
 
   .footer-about__row {
     justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .footer-message__send-btn {
-    margin-left: 2rem;
+    margin-top: 2rem; 
   }
 
   .footer-services {
@@ -157,7 +174,20 @@
   }
 
   .footer-service__list {
-    width: 33.333333%;
+    /* width: 33.333333%; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .footer__copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+  }
+
+  .footer__copyright--text {
+    line-height: 2rem;
   }
 }
 /* MOBILE AND TABLET */
@@ -291,6 +321,20 @@
 
   .promotions__destinations-wrapper {
     margin-bottom: 5rem;
+  }
+
+  .footer-contact__title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .footer-message {
+    justify-content: center;
+    padding: 0 8rem;
+  }
+
+  .footer-message__send-btn {
+    margin-top: 2rem;
   }
 
   .footer-services {
