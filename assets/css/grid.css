@@ -282,6 +282,11 @@
     margin-right: -15px;
   }
 
+  .row::after {
+    content: "";
+    clear: both;
+  }
+
   .row.sm-gutter {
     margin-left: -5px;
     margin-right: -5px;

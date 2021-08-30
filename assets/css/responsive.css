@@ -114,7 +114,8 @@
   .proposals-beach__countdown {
     align-items: center;
     width: 100%;
-    top: 78%;
+    top: 64%;
+    height: 10rem;
   }
 
   .proposals-beach__coutdown-time {
@@ -123,6 +124,7 @@
 
   .proposal-poster__row {
     justify-content: center;
+    margin-top: 15rem;
   }
 
   .promotions__destinations-row {
@@ -131,6 +133,11 @@
 
   .promotions__destinations-wrapper {
     margin-bottom: 3rem;
+  }
+
+  .promotions__destination-view--btn {
+    width: 100%;
+    text-align: center;
   }
 
   .footer-social {
@@ -159,9 +166,9 @@
     padding-left: 0;
     padding-right: 0;
   }
-  
+
   .footer-message__send-btn {
-    margin-top: 2rem; 
+    margin-top: 2rem;
   }
 
   .footer-services {
@@ -328,7 +335,7 @@
   .footer-message {
     padding-left: 0;
     padding-right: 0;
-  } 
+  }
 
   .footer-contact__row {
     padding-top: 5rem;
@@ -435,5 +442,11 @@
 
   .footer-message__send-btn {
     margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .header__navbar-list--m {
+    display: none;
   }
 }

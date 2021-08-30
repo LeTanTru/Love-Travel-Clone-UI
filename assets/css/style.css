@@ -553,6 +553,8 @@ ul {
 .proposals-beaches__picture {
   padding-top: 2rem;
   padding-left: 2.8rem;
+  position: relative;
+  z-index: 999;
 }
 
 .proposals-beaches__picture--image {
@@ -597,7 +599,7 @@ ul {
   display: flex;
   width: 66.67%;
   background-color: var(--blue-color);
-  z-index: 3;
+  z-index: 0;
   bottom: 0;
   transform: translate(-50%, 50%);
   text-align: center;
@@ -1030,7 +1032,7 @@ ul {
 }
 
 .footer-services {
-  display: flex !important; 
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   padding-right: 3.5rem;
