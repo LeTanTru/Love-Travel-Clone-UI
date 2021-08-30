@@ -125,6 +125,11 @@
   .proposal-poster__row {
     justify-content: center;
     margin-top: 15rem;
+    margin-bottom: 4rem;
+  }
+
+  .proposal-poster__wrapper {
+    margin-bottom: 3rem;
   }
 
   .promotions__destinations-row {
@@ -133,6 +138,10 @@
 
   .promotions__destinations-wrapper {
     margin-bottom: 3rem;
+  }
+
+  .proposals-beach__coutdown-time:not(:last-child)::after {
+    top: 16px;
   }
 
   .promotions__destination-view--btn {
