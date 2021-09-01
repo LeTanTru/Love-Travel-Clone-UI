@@ -32,7 +32,7 @@ ul {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 20rem;
-  filter: grayscale(5%);
+  filter: grayscale(15%);
 }
 
 .header__navbar {
@@ -568,7 +568,7 @@ ul {
 .change-btns {
   position: absolute;
   top: 0;
-  padding: 2rem;
+  padding: 4rem;
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -748,7 +748,7 @@ ul {
 
 .promotions__destinations-wrapper {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--lightergray-color);
+  border: 1px solid #f1f1f1;
 }
 
 .promotions__destinaton--image {
