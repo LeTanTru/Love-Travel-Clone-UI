@@ -13,6 +13,7 @@ changeBtns[0].classList.add('active')
 setInterval(()=>{
   changeImage.style.background = 'url(' + images[count] +') center center / cover no-repeat';
   count++;
+
   if (count > images.length - 1)
   count = 0;
   changeBtns[count].classList.add('active')
@@ -20,7 +21,6 @@ setInterval(()=>{
   changeBtns[count - 1].classList.remove('active')
   else changeBtns[2].classList.remove('active')
 }, 2000)
-
 // Button change image
 changeBtns[0].onclick = () => {
   for (let i = 0; i < changeBtns.length; i++) {

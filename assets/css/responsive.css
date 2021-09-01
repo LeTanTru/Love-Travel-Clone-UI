@@ -141,7 +141,7 @@
   }
 
   .proposals-beach__coutdown-time:not(:last-child)::after {
-    top: 16px;
+    top: 16px !important;
   }
 
   .promotions__destination-view--btn {
