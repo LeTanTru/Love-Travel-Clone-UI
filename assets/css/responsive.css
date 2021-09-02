@@ -95,6 +95,7 @@
   .proposals-banner__view {
     text-align: center;
     margin-bottom: 2rem;
+    margin: 0;
   }
 
   .proposals-banner__view--btn {
@@ -322,6 +323,15 @@
     margin-bottom: 5rem;
   }
 
+  .proposals-banner-image {
+    padding: 5rem 3.2rem;
+  }
+
+  .proposals-banner__view {
+    text-align: center;
+    margin-left: 0;
+  }
+
   .proposal-poster__wrapper {
     margin-bottom: 2rem;
   }
@@ -388,10 +398,6 @@
 
   .header__navbar-list--m {
     min-width: 30rem;
-  }
-
-  .proposals-banner-image {
-    padding: 5rem 11.1rem;
   }
 
   .proposals-banner__heading {
