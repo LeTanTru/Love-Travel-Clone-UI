@@ -94,7 +94,7 @@
 
   .proposals-banner__view {
     text-align: center;
-    margin-left: 0;
+    margin-left: 0 !important;
     margin-bottom: 2rem;
   }
 
