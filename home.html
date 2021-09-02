@@ -12,7 +12,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/base.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/home.css" />
   <link rel="stylesheet" href="./assets/css/grid.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +22,7 @@
   />
   <link rel="stylesheet" href="./assets/css/responsive.css" />    
 </head>
+<body>
   <div class="wrapper">
     <!-- header -->
     <header class="header">
@@ -43,7 +44,7 @@
               <!-- Submenu#1 -->
               <ul class="sub-menu__list">
                 <li class="header__subnav-item">
-                  <a href="#" class="header__subnav-item--link sub-menu__link">
+                  <a href="./assets/css/search1.html" class="header__subnav-item--link sub-menu__link">
                     Search 1
                     <span class="labels background-red">
                       Hot
@@ -297,25 +298,25 @@
 
             <!-- header-category__list -->
             <div class="row header-category__list">
-              <div class="header-category__item col l-2 m-12 c-10">
+              <div class="header-category__item col l-2 m-12 c-10" data-aos="fade-up">
                 <a href="#" class="header-category__link">
                   <img src="./assets/img/t-relax.png" alt="" class="header-category__link--img">
                   <p class="header-category__item-name">Relax</p>
                 </a>
               </div>
-              <div class="header-category__item col l-2 m-12 c-10">
+              <div class="header-category__item col l-2 m-12 c-10" data-aos="fade-up" data-aos-delay="300">
                 <a href="#" class="header-category__link">
                   <img src="./assets/img/t-cultural.png" alt="" class="header-category__link--img">
                   <p class="header-category__item-name">Cultural</p>
                 </a>
               </div>
-              <div class="header-category__item col l-2 m-12 c-10">
+              <div class="header-category__item col l-2 m-12 c-10" data-aos="fade-up" data-aos-delay="500">
                 <a href="#" class="header-category__link">
                   <img src="./assets/img/t-sport.png" alt="" class="header-category__link--img">
                   <p class="header-category__item-name">sport</p>
                 </a>
               </div>
-              <div class="header-category__item col l-2 m-12 c-10">
+              <div class="header-category__item col l-2 m-12 c-10" data-aos="fade-up" data-aos-delay="700">
                 <a href="#" class="header-category__link">
                   <img src="./assets/img/t-history.png" alt="" class="header-category__link--img">
                   <p class="header-category__item-name">history</p>
@@ -488,7 +489,7 @@
         <a href="#" class="header__navbar--link-m">Book Now</a>
       </li>
      
-    </ul>
+     </ul>
     <!-- wrapper__container -->
     <div class="wrapper__container">
       <!-- proposals -->
@@ -690,9 +691,8 @@
                 </div>
               </div>
               <div class="col l-4 m-12 c-12">
-                <div class="proposals-banner__view">
-                  <a href="#" class="proposals-banner__view--btn"
-                  data-aos="fade-left" data-aos-delay="600">
+                <div class="proposals-banner__view" data-aos="fade-left" data-aos-delay="600">
+                  <a href="#" class="proposals-banner__view--btn">
                     View All Packages
                   </a>
                 </div>
@@ -799,7 +799,6 @@
         </div>
       </div>
     
-
       <!-- promotions-banner -->
       <div class="promotions-banner">
         <div class="promotions-banner__wrapper promotions-banner__wrapper-img--1">
@@ -974,11 +973,10 @@
               <input type="email" id="footer-message__email" name="Your Email" required class="footer-message__input"
               data-aos="fade-down">
               <input type="submit" class="footer-message__send-btn" value="SEND"
-              data-aos="fade-left" data-aos-delay="500">
+              data-aos="zoom-in-left" data-aos-delay="">
             </form>
           </div>
         </div>
-        
         <!-- Footer service -->
         <div class="row footer-about__row">
           <div class="col l-6 m-12 c-12 footer-social"> 
@@ -1084,8 +1082,8 @@
         </div>
         <div class="row">
           <div class="col footer__copyright">
-            <p class="footer__copyright--text" data-aos="fade-right">THE BEST WORDPRESS TRAVEL THEME</p>
-            <p class="footer__copyright--text" data-aos="fade-in" data-aos-delay="500">COPYRIGHT NICDARK THEMES 2018</p>
+            <p class="footer__copyright--text" data-aos="fade-right" data-aos-off="50">THE BEST WORDPRESS TRAVEL THEME</p>
+            <p class="footer__copyright--text" data-aos="fade-left" data-aos-off="50" data-aos-delay="500">COPYRIGHT NICDARK THEMES 2018</p>
           </div>
         </div>
       </div>
@@ -1214,6 +1212,6 @@
       offset: 100
     });
   </script>
-<script src="./assets/js/app.js"></script>
-  </body>
+    <script src="./assets/js/app.js"></script>
+</body>
 </html>

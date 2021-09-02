@@ -23,7 +23,6 @@ ul {
 }
 .wrapper {
   overflow: hidden;
-  /* width: 100%; */
 }
 /* Header */
 .header__background--img {
@@ -89,6 +88,7 @@ ul {
   display: block;
   opacity: 0.5;
   transition: opacity linear 0.15s;
+  -webkit-transition: opacity linear 0.15s;
 }
 
 .header__navbar-menu--icon:hover {
@@ -200,6 +200,7 @@ ul {
   padding: 10px 24px 8px 10px;
   cursor: pointer;
   transition: opacity linear 0.2s;
+  -webkit-transition: opacity linear 0.2s;
 }
 
 .header-search__btn:hover {
@@ -237,6 +238,7 @@ ul {
   padding: 2.4rem 1.5rem;
   font-weight: 500;
   transition: opacity linear 0.1s;
+  -webkit-transition: opacity linear 0.1s;
   letter-spacing: 2px;
 }
 
@@ -375,6 +377,7 @@ ul {
   opacity: 0;
   visibility: hidden;
   transition: opacity linear 0.3s, visibility linear 0.3s;
+  -webkit-transition: opacity linear 0.3s, visibility linear 0.3s;
 }
 
 .proposals-item__details--heading {
@@ -430,6 +433,10 @@ ul {
   height: 100%;
 }
 
+.proposals-banner__heading {
+  width: 100%;
+}
+
 .proposals-banner__heading--topic {
   color: var(--white-color);
   font-size: 5rem;
@@ -440,19 +447,23 @@ ul {
   text-decoration: underline var(--red-color);
 }
 
+.proposals-banner__view {
+  margin-left: 7.25rem;
+  width: 100%;
+}
+
 .proposals-banner__view--btn {
   text-align: center;
   color: var(--red-color);
   background-color: var(--white-color);
   display: inline-block;
   font-size: 1.4rem;
-  line-height: 1.4rem;
   text-transform: uppercase;
   padding: 1.5rem 3.5rem;
   border-radius: 30rem;
   letter-spacing: 2px;
   transition: color linear 0.25s;
-  margin-left: 7.25rem;
+  -webkit-transition: color linear 0.25s !important;
 }
 
 .proposals-banner__view--btn:hover {
@@ -544,6 +555,7 @@ ul {
   border-radius: 3rem;
   display: inline-block;
   transition: background-color linear 0.2s;
+  -webkit-transition: background-color linear 0.2s;
 }
 
 .proposals-beaches__book-btn:hover {
@@ -554,7 +566,7 @@ ul {
   padding-top: 2rem;
   padding-left: 2.8rem;
   position: relative;
-  z-index: 999;
+  z-index: 9;
 }
 
 .proposals-beaches__picture--image {
@@ -563,6 +575,7 @@ ul {
   height: 41rem;
   background: url("../img/parallax-4-1.jpg") center center / cover no-repeat;
   transition: background linear 1s;
+  -webkit-transition: background linear 1s;
 }
 
 .change-btns {
@@ -583,6 +596,7 @@ ul {
   border-radius: 1rem;
   cursor: pointer;
   transition: opacity linear 0.2s;
+  -webkit-transition: opacity linear 0.2s;
 }
 
 .change-btn:not(:last-child) {
@@ -732,6 +746,7 @@ ul {
   text-transform: uppercase;
   margin-top: 3.5rem;
   transition: color linear 0.2s, background-color linear 0.2s;
+  -webkit-transition: color linear 0.2s, background-color linear 0.2s;
 }
 
 .promotions-banner__discover--view-btn:hover {
@@ -860,6 +875,7 @@ ul {
   visibility: hidden;
   opacity: 0;
   transition: visibility ease-out 0.25s, opacity ease-out 0.25s;
+  -webkit-transition: visibility ease-out 0.25s, opacity ease-out 0.25s;
 }
 
 .promtions__destination--note::before {
@@ -904,6 +920,7 @@ ul {
   display: inline-block;
   margin-top: 2.4rem;
   transition: opacity linear 0.25s;
+  -webkit-transition: opacity linear 0.25s;
 }
 
 .promotions__destination-view--btn:hover {
@@ -977,6 +994,12 @@ ul {
   border-radius: 3rem;
   letter-spacing: 2px;
   transition: background-color linear 0.2s;
+  -webkit-transition: background-color linear 0.2s;
+}
+
+[data-aos^="zoom"][data-aos^="zoom"] {
+  opacity: 0;
+  transition-property: opacity, transform, background-color;
 }
 
 .footer-message__send-btn:hover {
@@ -1158,7 +1181,8 @@ ul {
   opacity: 0;
   transform: translateX(100%);
   transition: transform ease-in-out 0.45s, opacity ease-in-out 0.45s;
-  z-index: 999;
+  z-index: 9;
+  -webkit-transition: transform ease-in-out 0.45s, opacity ease-in-out 0.45s;
 }
 
 .menu-slide.open {
@@ -1347,6 +1371,7 @@ ul {
   opacity: 0;
   visibility: hidden;
   transition: opacity linear 0.25s, visibility linear 0.25s;
+  -webkit-transition: opacity linear 0.25s, visibility linear 0.25s;
   z-index: 1;
 }
 

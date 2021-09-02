@@ -318,6 +318,14 @@
     font-size: 2.5rem;
   }
 
+  .proposal-poster__row {
+    margin-bottom: 5rem;
+  }
+
+  .proposal-poster__wrapper {
+    margin-bottom: 2rem;
+  }
+
   .proposals-beaches__picture {
     padding: 0;
     width: 100%;
@@ -356,9 +364,8 @@
 
   .footer-message__send-btn {
     margin-top: 1rem;
-    margin-left: auto;
-    margin-right: 1rem;
     font-size: 1.8rem;
+    width: 100%;
   }
 
   .footer-services {
@@ -384,7 +391,7 @@
   }
 
   .proposals-banner-image {
-    padding: 5rem 3.2rem;
+    padding: 5rem 11.1rem;
   }
 
   .proposals-banner__heading {
@@ -394,11 +401,11 @@
 
   .proposals-banner__view {
     text-align: center;
+    margin-left: 0;
   }
 
   .proposals-banner__view--btn {
     margin-top: 4rem;
-    margin-left: 0;
   }
 
   .m-12 {
@@ -452,10 +459,22 @@
   .footer-message__send-btn {
     margin-top: 2rem;
   }
+
+  .proposals-beaches__desc h2 {
+    letter-spacing: 0.5px;
+  }
+  
 }
 
 @media screen and (min-width: 1201px) {
   .header__navbar-list--m {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1354px){
+  .proposals-banner__heading--topic {
+    font-size: 4rem;
+    margin-left: -2rem;
   }
 }

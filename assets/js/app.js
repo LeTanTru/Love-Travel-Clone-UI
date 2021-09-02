@@ -48,7 +48,7 @@ changeBtns[2].onclick = () => {
 const menuSlide = document.querySelector(".menu-slide");
 const menuOverlay = document.querySelector(".wrapper__overlay");
 const openMenuSlide = document.querySelector(".header__navbar-menu");
-const closeMenuSlide = document.querySelector(".menu-slide__close-icon--img");
+const closeMenuSlide = document.querySelector(".menu-slide__close-icon--img");  
 
 openMenuSlide.addEventListener("click", () => {
   menuSlide.classList.add("open");
@@ -82,3 +82,4 @@ closeMenuMobile.addEventListener('click', ()=>{
 menuOverlay.addEventListener('click', ()=>{
   menuMobile.classList.remove('open');
 })
+
