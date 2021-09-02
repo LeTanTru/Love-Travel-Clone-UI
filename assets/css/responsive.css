@@ -399,11 +399,6 @@
     margin-left: 2rem;
   }
 
-  .proposals-banner__view {
-    text-align: center;
-    margin-left: 0;
-  }
-
   .proposals-banner__view--btn {
     margin-top: 4rem;
   }
@@ -463,7 +458,6 @@
   .proposals-beaches__desc h2 {
     letter-spacing: 0.5px;
   }
-  
 }
 
 @media screen and (min-width: 1201px) {
@@ -472,7 +466,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1354px){
+@media screen and (min-width: 1300px) and (max-width: 1354px) {
   .proposals-banner__heading--topic {
     font-size: 4rem;
     margin-left: -2rem;
