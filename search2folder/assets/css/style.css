@@ -26,7 +26,7 @@ ul {
 }
 /* Header */
 .header__background--img {
-  background: url("/assets/img/parallax-2.jpg") right center / cover no-repeat;
+  background: url("../img/parallax-2.jpg") right center / cover no-repeat;
   position: relative;
   width: 100%;
   margin: 0 auto;
