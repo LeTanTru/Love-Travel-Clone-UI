@@ -52,7 +52,14 @@ adjustBar.addEventListener("mousemove",()=>{
   let percent = nowPrice*100/adjustBar.max;
   let color = 'linear-gradient(to right, var(--blue-color) ' + percent +'%, var(--gray-color) ' + percent + '%)';
   adjustBar.style.backgroundImage = color;
-})
+});
+
+adjustBar.addEventListener("input",()=>{
+  let nowPrice = adjustBar.value;
+  let percent = nowPrice*100/adjustBar.max;
+  let color = 'linear-gradient(to right, var(--blue-color) ' + percent +'%, var(--gray-color) ' + percent + '%)';
+  adjustBar.style.backgroundImage = color;
+});
           
 // Show/Hide Calendar
 const headerSelect = document.querySelector('.header-search__select');
