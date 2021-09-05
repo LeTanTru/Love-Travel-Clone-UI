@@ -2,14 +2,63 @@
 @media screen and (max-width: 739px) {
   .header__background--img {
     padding-bottom: 12rem;
+    padding-bottom: 0;
   }
 
   .header-search__sub-title {
     letter-spacing: 1.5px;
   }
 
-  .header-search__main-title p {
-    display: block;
+  .header-search__title {
+    padding: 10rem 5.7rem 0rem;
+  }
+
+  .header-search__select--row {
+    justify-content: center;
+  }
+
+  .header-search__select--destination,
+  .header-search__select--date {
+    margin-bottom: 2rem;
+  }
+
+  .header-search__filter-list .row {
+    justify-content: center;
+  }
+
+  .header-search__filter-list {
+    min-width: 25rem;
+    top: 185%;
+    padding-bottom: 0;
+  }
+
+  .header-search__filter-item {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .header-search__filter-choose {
+    justify-content: center;
+  }
+
+  .header-search__filter-choose--checkbox {
+    transform: scale(1.5);
+  }
+
+  .header-search__filter-chose--desc {
+    font-size: 2rem;
+  }
+
+  .header-filter__pick-icon--img {
+    width: 3rem;
+  }
+
+  .header-filter__pick-icon--img:first-child {
+    margin-right: 2rem;
+  }
+
+  .promotions__destination-price {
+    margin-top: 2rem;
   }
 
   .header__navbar-list--m {
@@ -22,6 +71,10 @@
 
   .promotions__destinations-wrapper {
     margin-bottom: 3rem;
+  }
+
+  .promotions__destination-view--two {
+    justify-content: flex-end;
   }
 
   .promotions__destination-view--btn {
@@ -67,6 +120,7 @@
 
   .footer-services {
     margin-top: 4rem;
+    padding-right: 0;
   }
 
   .footer-service__list {
@@ -95,6 +149,15 @@
 }
 /* MOBILE AND TABLET */
 @media screen and (max-width: 1201px) {
+  .header__background--img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .promotions__destination-view--two {
+    justify-content: flex-end;
+  }
+
   .menu-slide,
   .menu-slide__overlay,
   .footer__fixed-icon,
@@ -122,6 +185,14 @@
 }
 /* NORMAL IPAD */
 @media screen and (min-width: 740px) and (max-width: 1023px) {
+  .header-search__select--row {
+    justify-content: center;
+  }
+
+  .promotions__destination-price {
+    margin-top: 2rem;
+  }
+
   .promotions__destinations-row {
     margin-bottom: -5rem;
   }
@@ -151,7 +222,7 @@
     text-align: center;
     width: 100%;
   }
-  
+
   .promotions__destination-view--btn {
     width: 100%;
     text-align: center;
@@ -159,6 +230,11 @@
 }
 /* COMMON IPAD */
 @media screen and (min-width: 740px) and (max-width: 1200px) {
+  .header-search__title {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
   .header__navbar-list--m {
     min-width: 30rem;
   }
@@ -187,7 +263,7 @@
   .promotions__destination-view--btn {
     width: 100%;
   }
-  
+
   .footer-contact__col {
     align-self: center;
   }
@@ -212,8 +288,6 @@
   .footer-service__list {
     padding: 0;
   }
-
-  
 }
 
 @media screen and (min-width: 1201px) {

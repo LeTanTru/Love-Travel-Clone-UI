@@ -762,8 +762,8 @@ ul {
 }
 
 .promotions__destinations-wrapper {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  border: 1px solid #f1f1f1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--lightergray-color);
 }
 
 .promotions__destinaton--image {
@@ -844,7 +844,6 @@ ul {
 .promotions__destination-plus--wrapper {
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .promotions__destination-plus--wrapper:hover .promtions__destination--note {
@@ -853,6 +852,7 @@ ul {
 }
 
 .promotions__destinations-plus {
+  position: relative;
   margin-top: 1.2rem;
   margin-left: 8px;
   color: var(--white-color);
@@ -871,7 +871,7 @@ ul {
   padding: 1rem 1.2rem;
   position: absolute;
   bottom: -45px;
-  right: -24px;
+  left: -3px;
   visibility: hidden;
   opacity: 0;
   transition: visibility ease-out 0.25s, opacity ease-out 0.25s;
