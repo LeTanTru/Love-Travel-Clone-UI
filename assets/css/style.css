@@ -570,22 +570,25 @@ ul {
 }
 
 .proposals-beaches__picture--image {
-  position: relative;
   width: 75rem;
   height: 41rem;
-  background: url("../img/parallax-4-1.jpg") center center / cover no-repeat;
-  transition: background linear 1s;
-  -webkit-transition: background linear 1s;
+}
+
+.proposals-beaches__picture--image-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
 }
 
 .change-btns {
   position: absolute;
-  top: 0;
+  top: 2rem;
   padding-top: 2rem;
-  z-index: 3;
   display: flex;
   justify-content: center;
   width: 100%;
+  z-index: 3;
 }
 
 .change-btns .change-btn {
@@ -613,11 +616,10 @@ ul {
   display: flex;
   width: 66.67%;
   background-color: var(--blue-color);
-  z-index: 0;
-  bottom: 0;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   padding: 3rem 0;
+  z-index: 9999;
 }
 
 .proposals-beach__coutdown-time {

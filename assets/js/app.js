@@ -5,45 +5,57 @@ const images = [
   "./assets/img/parallax-4.jpg",
   "./assets/img/parallax-4-1.jpg",
 ];
-const changeImage = document.querySelector(".proposals-beaches__picture--image");
-
-// Auto change beach img
-let count = 0;
-changeBtns[0].classList.add('active')
-setInterval(()=>{
-  changeImage.style.background = 'url(' + images[count] +') center center / cover no-repeat';
-  count++;
-
-  if (count > images.length - 1)
-  count = 0;
-  changeBtns[count].classList.add('active')
-  if (count > 0)
-  changeBtns[count - 1].classList.remove('active')
-  else changeBtns[2].classList.remove('active')
-}, 2000)
+const changeImage = 
+            document.querySelector(".proposals-beaches__picture--image-img");
+changeBtns[0].classList.add('active');
 // Button change image
 changeBtns[0].onclick = () => {
   for (let i = 0; i < changeBtns.length; i++) {
     changeBtns[i].classList.remove("active");
   }
-  changeImage.style.background = 'url(' + images[0] +') center center / cover no-repeat';
+  changeImage.src = images[0];
   changeBtns[0].classList.add("active");
 };
+
 changeBtns[1].onclick = () => {
   for (let i = 0; i < changeBtns.length; i++) {
     changeBtns[i].classList.remove("active");
   }
   changeBtns[1].classList.add("active");
-  changeImage.style.background = 'url(' + images[1] +') center center / cover no-repeat';
+  changeImage.src = images[1];
 };
+
 changeBtns[2].onclick = () => {
   for (let i = 0; i < changeBtns.length; i++) {
     changeBtns[i].classList.remove("active");
   }
   changeBtns[2].classList.add("active");
-  changeImage.style.background = 'url(' + images[2] +') center center / cover no-repeat';
+  changeImage.src = images[2];
 };
-
+// Auto change beach image
+let count = 0;
+let repeater = ()=>{
+   change = setInterval(()=>{
+     changeBtns.forEach((changeBtn)=>{
+       changeBtn.classList.remove('active');
+     })
+     if(count > (images.length - 1)) {
+       count = 0;
+     }
+     changeBtns[count].classList.add('active');
+     changeImage.src = images[count];
+    count++;
+   }, 3000);
+}
+repeater();
+// Stop auto changeImg
+changeImage.addEventListener('mouseover',()=>{
+  clearInterval(change);
+});
+// Continue auto changeImg
+changeImage.addEventListener('mouseout',()=>{
+  repeater();
+})
 // Menu slide
 const menuSlide = document.querySelector(".menu-slide");
 const menuOverlay = document.querySelector(".wrapper__overlay");

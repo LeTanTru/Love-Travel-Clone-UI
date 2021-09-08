@@ -1,0 +1,250 @@
+/* MOBILE */
+@media screen and (max-width: 739px) {
+  .header__background--img {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 7rem;
+  }
+
+  .header__navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .header__navbar-list--m {
+    min-width: 28rem;
+  }
+
+  .promotions-intro .row {
+    justify-content: center;
+  }
+
+  .promotions-intro__letter {
+    margin: 2.8rem 1.8rem 1.8rem;
+  }
+
+  .promotions__destinations-row {
+    margin-bottom: -3rem;
+  }
+
+  .promotions__destinations-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  .promotions__destination-view--btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-social {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+
+  .footer-social__links-list {
+    justify-content: space-around;
+  }
+
+  .footer-message {
+    margin-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .footer-contact__col {
+    text-align: center;
+  }
+
+  .footer-about__row {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-message__input {
+    width: 100%;
+  }
+
+  .footer-message__send-btn {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .footer-services {
+    margin-top: 4rem;
+  }
+
+  .footer-service__list {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .footer__copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+  }
+
+  .footer__copyright--text {
+    line-height: 2rem;
+  }
+
+  .footer-contact__title {
+    margin-left: 0;
+  }
+
+  .footer-contact__heading {
+    margin-top: 2rem;
+  }
+}
+/* MOBILE AND TABLET */
+@media screen and (max-width: 1201px) {
+  .menu-slide,
+  .menu-slide__overlay,
+  .footer__fixed-icon,
+  .header__navbar-list {
+    display: none;
+  }
+
+  .header__navbar {
+    background-color: var(--darkgray-color);
+    display: block;
+    text-align: center;
+  }
+
+  .header__navbar-menu {
+    display: inline-block;
+  }
+
+  .header__navbar-menu--icon {
+    padding: 1.5rem 1rem 0;
+  }
+
+  .promotions__destinations-row {
+    justify-content: center;
+  }
+}
+/* NORMAL IPAD */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .promotions__destinations-row {
+    margin-bottom: -5rem;
+  }
+
+  .promotions__destinations-wrapper {
+    margin-bottom: 5rem;
+  }
+
+  .footer-message {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-contact__row {
+    padding-top: 5rem;
+  }
+
+  .footer-services {
+    margin-top: 2rem;
+  }
+
+  .footer-social__links-list {
+    justify-content: space-around;
+  }
+
+  .promotions__destination-view {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .promotions__destination-view--btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* COMMON IPAD */
+@media screen and (min-width: 740px) and (max-width: 1200px) {
+  .header__navbar-list--m {
+    min-width: 30rem;
+  }
+
+  .m-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .footer-message__send-btn {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .footer-contact__col {
+    margin-top: 0;
+  }
+}
+/* IPAD PRO */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .promotions-intro .row .col.l-9 {
+    flex: 0 0 95%;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .promotions-intro .row .col.l-3 {
+    margin-left: 5rem;
+    flex: 0 0 95%;
+    max-width: 95%;
+    margin-top: 2rem;
+  }
+
+  .promotions__destinations .row {
+    gap: 5rem 0;
+  }
+
+  .promotions__destinations .row .col.l-4 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
+  .promotions__destination-view {
+    text-align: center;
+  }
+
+  .promotions__destination-view--btn {
+    width: 70%;
+  }
+  
+  .footer-contact__col {
+    align-self: center;
+  }
+
+  .footer-message__send-btn {
+    margin-top: 1rem;
+  }
+
+  .footer-contact__heading {
+    width: 100%;
+  }
+
+  .footer-about__row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-contact__row {
+    padding-top: 9rem;
+  }
+
+  .footer-service__list {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .header__navbar-list--m {
+    display: none;
+  }
+}
