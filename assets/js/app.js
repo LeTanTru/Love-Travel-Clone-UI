@@ -5,9 +5,10 @@ const images = [
   "./assets/img/parallax-4.jpg",
   "./assets/img/parallax-4-1.jpg",
 ];
-const changeImage = 
-            document.querySelector(".proposals-beaches__picture--image-img");
-changeBtns[0].classList.add('active');
+const changeImage = document.querySelector(
+  ".proposals-beaches__picture--image-img"
+);
+changeBtns[0].classList.add("active");
 // Button change image
 changeBtns[0].onclick = () => {
   for (let i = 0; i < changeBtns.length; i++) {
@@ -34,33 +35,33 @@ changeBtns[2].onclick = () => {
 };
 // Auto change beach image
 let count = 0;
-let repeater = ()=>{
-   change = setInterval(()=>{
-     changeBtns.forEach((changeBtn)=>{
-       changeBtn.classList.remove('active');
-     })
-     if(count > (images.length - 1)) {
-       count = 0;
-     }
-     changeBtns[count].classList.add('active');
-     changeImage.src = images[count];
+let repeater = () => {
+  change = setInterval(() => {
+    changeBtns.forEach((changeBtn) => {
+      changeBtn.classList.remove("active");
+    });
+    if (count > images.length - 1) {
+      count = 0;
+    }
+    changeBtns[count].classList.add("active");
+    changeImage.src = images[count];
     count++;
-   }, 3000);
-}
+  }, 3000);
+};
 repeater();
 // Stop auto changeImg
-changeImage.addEventListener('mouseover',()=>{
+changeImage.addEventListener("mouseover", () => {
   clearInterval(change);
 });
 // Continue auto changeImg
-changeImage.addEventListener('mouseout',()=>{
+changeImage.addEventListener("mouseout", () => {
   repeater();
-})
+});
 // Menu slide
 const menuSlide = document.querySelector(".menu-slide");
 const menuOverlay = document.querySelector(".wrapper__overlay");
 const openMenuSlide = document.querySelector(".header__navbar-menu");
-const closeMenuSlide = document.querySelector(".menu-slide__close-icon--img");  
+const closeMenuSlide = document.querySelector(".menu-slide__close-icon--img");
 
 openMenuSlide.addEventListener("click", () => {
   menuSlide.classList.add("open");
@@ -78,20 +79,21 @@ closeMenuSlide.addEventListener("click", () => {
 });
 
 // Header_navbar-menu on mobile
-const menuMobile = document.querySelector('.header__navbar-list--m');
+const menuMobile = document.querySelector(".header__navbar-list--m");
 const openMenuMobile = document.querySelector(".header__navbar-menu");
-const closeMenuMobile = document.querySelector('.header__navbar-item--m-close--icon');
+const closeMenuMobile = document.querySelector(
+  ".header__navbar-item--m-close--icon"
+);
 
-openMenuMobile.addEventListener('click',()=>{
-  menuMobile.classList.add('open');
+openMenuMobile.addEventListener("click", () => {
+  menuMobile.classList.add("open");
 });
 
-closeMenuMobile.addEventListener('click', ()=>{
-  menuMobile.classList.remove('open');
-  menuOverlay.style.position = 'unset'
+closeMenuMobile.addEventListener("click", () => {
+  menuMobile.classList.remove("open");
+  menuOverlay.style.position = "unset";
 });
 
-menuOverlay.addEventListener('click', ()=>{
-  menuMobile.classList.remove('open');
-})
-
+menuOverlay.addEventListener("click", () => {
+  menuMobile.classList.remove("open");
+});
