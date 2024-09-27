@@ -355,6 +355,7 @@ ul {
   border-radius: 3rem;
   transition: opacity linear 0.2s;
   -webkit-transition: opacity linear 0.2s;
+  cursor: pointer;
 }
 
 .header-search__filter:hover {
@@ -399,6 +400,7 @@ ul {
   visibility: hidden;
   transition: opacity ease-in-out 0.25s, visibility ease-in-out 0.25s;
   z-index: 999;
+  cursor: default;
 }
 
 .header-search__filter-list::before {
@@ -428,6 +430,7 @@ ul {
 .header-search__filter-choose--checkbox {
   margin-right: 8px;
   width: 2.5rem;
+  cursor: pointer;
 }
 
 .header-search__filter-chose--desc {
@@ -510,6 +513,8 @@ ul {
 
 .promotions__destinations-row {
   margin-top: 3rem;
+  position: relative;
+  z-index: -1;
 }
 
 .promotions__destinations-wrapper {
